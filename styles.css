@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("back.jpeg");
+    color: rgb(196, 193, 193);
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.language-buttons {
+    text-align: center;
+}
+
+.language-buttons button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-buttons button:hover {
+    background-color: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .language-buttons button {
+        margin-bottom: 10px;
+    }
+}
+
+#content {
+    direction: ltr;
+}
+
+#content.arabicBtn,
+#content.kurdish {
+    direction: rtl;
+}
